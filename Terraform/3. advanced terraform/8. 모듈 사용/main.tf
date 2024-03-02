@@ -11,4 +11,7 @@ module "lambda_function" {
   tags = {
     Name = "my-lambda1"
   }
+
+  architectures = ["arm64"]
+  cloudwatch_logs_retention_in_days = 1
 }
